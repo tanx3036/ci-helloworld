@@ -16,7 +16,7 @@ jobs:
 
       # Download previous coverage artifact (if it exists)
       - name: Download previous coverage artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: previousCoverage
           path: .
@@ -73,7 +73,7 @@ jobs:
 
       # Upload the current coverage file as an artifact to be available in the next run.
       - name: Upload current coverage artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: previousCoverage
           path: coverage.txt
