@@ -20,7 +20,7 @@ jobs:
         with:
           name: previousCoverage
           path: .
-          if-no-files-found: 'ignore'
+        continue-on-error: true
 
       # Read the previous branch coverage value from file, or default to 0 if not present.
       - name: Set previous coverage env variable
